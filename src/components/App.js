@@ -36,5 +36,10 @@ function App() {
   )
 }
 
+document.getElementById("main").addEventListener("click",()=>{
+    let temp = todo1.value;
+    todo1.value = todo2.value;
+    todo2.value = temp;
+})
 
 export default App;
