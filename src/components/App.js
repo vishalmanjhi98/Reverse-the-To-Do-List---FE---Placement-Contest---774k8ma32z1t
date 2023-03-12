@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div id="main">
-      <button>Reverse</button>
+      <button id="btn" >Reverse</button>
       <table>
         <tbody>
         </tbody>
@@ -36,7 +36,7 @@ function App() {
   )
 }
 
-document.getElementById("main").addEventListener("click",()=>{
+document.getElementById("btn").addEventListener("click",()=>{
     let temp = todo1.value;
     todo1.value = todo2.value;
     todo2.value = temp;
